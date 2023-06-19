@@ -49,6 +49,7 @@ const FormInput = props => {
         inputOutput = (
             <>
                 {props.name}:
+                {props.description && <span className={styles.description}>{props.description}</span>}
                 <textarea
                     {...commonProps}
                 />
@@ -58,6 +59,7 @@ const FormInput = props => {
         inputOutput = (
             <>
                 {props.name}:
+                {props.description && <span className={styles.description}>{props.description}</span>}
                 <input
                     {...commonProps}
                     checked={props.value}

@@ -2,6 +2,7 @@
     display: block;
     text-align: initial;
     width: 100%;
+    margin-bottom: 0.8em;
 }
 .inputWrapper label {
     position: relative;
@@ -9,10 +10,14 @@
     color: #555;
     width: 100%;
 }
-.inputWrapper.error input, .inputWrapper.error select, .inputWrapper.error textarea{
+.inputWrapper.error input,
+.inputWrapper.error select,
+.inputWrapper.error textarea {
     border-color: red;
 }
-.inputWrapper input, .inputWrapper select, .inputWrapper textarea {
+.inputWrapper input,
+.inputWrapper select,
+.inputWrapper textarea {
     width: 100%;
     padding: 10px 20px;
     box-sizing: border-box;
@@ -22,20 +27,23 @@
     outline: none;
     border: 1px solid #c0b091;
     display: block;
+    margin-top: 5px;
 }
-.inputWrapper select{
+.inputWrapper select {
     border-radius: 1px;
 }
-.inputWrapper textarea{
+.inputWrapper textarea {
     box-sizing: border-box;
     width: 100%;
     resize: none;
 }
-.inputWrapper input:focus, .inputWrapper select:focus, .inputWrapper textarea:focus {
+.inputWrapper input:focus,
+.inputWrapper select:focus,
+.inputWrapper textarea:focus {
     outline: none;
     border: 1px solid #cd9a53;
 }
-.checkboxWrapper{
+.checkboxWrapper {
     margin: 0px;
 }
 .checkbox {
@@ -80,7 +88,7 @@ input[type="checkbox"]:checked + .checkbox {
 input[type="checkbox"]:checked + .checkbox:after {
     display: block;
 }
-.errorMessage{
+.errorMessage {
     font-size: 0.8em;
     margin-right: 1em;
     margin-top: 0.5em;
@@ -106,11 +114,19 @@ input[type="checkbox"]:checked + .checkbox:after {
     top: 0;
     width: auto;
 }
-.inputWrapper.disabled label { 
+.inputWrapper.disabled label {
     color: #9f9f9f;
 }
 .inputWrapper.disabled input {
     background-color: #e2e2e2;
     color: #9f9f9f;
     border-color: #cdcdcd;
+}
+.description {
+    font-size: 0.8em;
+    display: block;
+    font-weight: 100;
+    font-style: italic;
+    color: #5d5d5d;
+    margin-top: 3px;
 }

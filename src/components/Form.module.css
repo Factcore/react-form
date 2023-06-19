@@ -14,7 +14,7 @@
     padding: 1em;
 }
 .inputsWrapper {
-    min-height: 300px;
+    min-height: 425px;
     display: grid;
     place-items: center;
 }
@@ -38,5 +38,7 @@
         max-width: 500px;
         font-size: 17px;
     }
-
+    .inputsWrapper {
+        min-height: 490px;
+    }
 }

@@ -6,18 +6,21 @@ const FORM_FIELDS = [
         inputs: [
             {
                 name: "Место посадки",
+                description: "Аэропорт, железнодорожная станция, отель или точный адрес",
                 type: "text",
                 required: true,
                 id: "ladingPlace"
             },
             {
                 name: "Место назначения",
+                description: "Аэропорт, железнодорожная станция, отель или точный адрес",
                 type: "text",
                 required: true,
                 id: "destinationPlace"
             },
             {
                 name: "Номер рейса",
+                description: "Детали рейса, номер поезда, с которым вы прибываете",
                 type: "text",
                 required: true,
                 id: "flightNumber"
@@ -29,6 +32,7 @@ const FORM_FIELDS = [
         inputs: [
             {
                 name: "Дата и время подачи",
+                description: "Укажите дату и время трансфера в формате дд/мм/гггг чч/мм",
                 type: "datetime-local",
                 required: true,
                 id: "submissionTime"
@@ -42,6 +46,7 @@ const FORM_FIELDS = [
             },
             {
                 name: "Дата и время назад",
+                description: "Укажите дату и время обратного трансфера в формате дд/мм/гггг чч/мм",
                 type: "datetime-local",
                 required: false,
                 id: "returnTime",
@@ -61,6 +66,7 @@ const FORM_FIELDS = [
             },
             {
                 name: "Дети и их возраст",
+                description: "Детские кресла предоставляются бесплатно",
                 type: "text",
                 required: false,
                 id: "kidsNumberAge"
@@ -68,13 +74,14 @@ const FORM_FIELDS = [
             {
                 name: "Багаж",
                 type: "text",
-                required: true,
+                required: false,
                 id: "luggage"
             },
             {
                 name: "Негабаритный багаж",
+                description: "Укажите количество негабаритного багажа, с описанием и приблизительными размерами",
                 type: "text",
-                required: true,
+                required: false,
                 id: "oversizedLuggage"
             }
         ]
@@ -88,9 +95,12 @@ const FORM_FIELDS = [
                 required: true,
                 id: "car",
                 options: [
-                    {value: 1, name: "Машина 1"},
-                    {value: 2, name: "Машина 2"},
-                    {value: 3, name: "Машина 3"},
+                    {value: 1, name: "Comfort  klass"},
+                    {value: 2, name: "Mercedes klass E (1-3 pax ) "},
+                    {value: 3, name: "Mercedes klass V (4-7 pax )"},
+                    {value: 4, name: "Mercedes klass S long W223"},
+                    {value: 5, name: "Mercedes Sprinter (4-8 pax.)"},
+                    {value: 6, name: "Mercedes Sprinter Business (4-8 pax.)"}
                 ]
             },
         ]
@@ -106,20 +116,23 @@ const FORM_FIELDS = [
             },
             {
                 name: "Номер телефона",
+                description: "С указанием кода страны ( + xx xxx xxxxxxxx )",
                 type: "phone",
                 required: true,
                 id: "phone"
             },
             {
                 name: "Электронная почта",
+                description: "Мы отправим котировку по услуге трансфера на этот адрес",
                 type: "email",
                 required: true,
                 id: "email"
             },
             {
                 name: "Дополнительная информация",
+                description: "Ваши пожелания и вопросы, не включенные в другие поля",
                 type: "textarea",
-                required: true,
+                required: false,
                 id: "additionalInfo"
             }
         ]
